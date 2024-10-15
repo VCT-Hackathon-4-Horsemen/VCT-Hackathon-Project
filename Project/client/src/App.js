@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Navbar from "./Navbar.js"
 
 function App() {
 
@@ -15,7 +16,12 @@ function App() {
       )
     }, [])
     return (
+
+
+
+
     <div>
+      <Navbar />
 
       {(typeof data.members === 'undefined') ? (
         <p>Loading...</p>
