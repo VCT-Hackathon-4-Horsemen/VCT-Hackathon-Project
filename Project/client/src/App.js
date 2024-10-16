@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from "./Navbar.js"
+import LandingPageTop from './LandingPageTop.js'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
 
     <div>
       <Navbar />
+      <LandingPageTop />
 
       {(typeof data.members === 'undefined') ? (
         <p>Loading...</p>
