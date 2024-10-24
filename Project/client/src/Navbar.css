@@ -6,35 +6,25 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-/*
+
 nav {
-    height: 80px; 
-    display: flex;
-    padding: 20px 36px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
-    align-items: center; 
-    background-color: rgba(255, 255, 255, 0); 
-}
-*/
-nav {
-    height: 70px; /* Maintain the height of the navbar */
+    height: 70px; 
     display: flex;
     align-items: center; /* Center items vertically */
-    position: fixed; /* Fixed position */
-    top: 0; /* Anchors it to the top */
-    left: 0; /* Anchors it to the left */
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it's above other content */
-    transition: background-color 0.3s; /* Smooth transition */
-    background-color: rgba(255, 255, 255, 0); /* Initially transparent */
-    padding: 0 200px; /* Default padding on both sides */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    transition: background-color 0.3s; 
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 0 200px; 
     justify-content: space-between; /* Distribute space */
-    
 }
 
 
 nav.scrolled {
-    background-color: white; /* Background color when scrolled */
+    background-color: #3b3b3b; /* Background color when scrolled */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow when scrolled */
 }
 
@@ -44,14 +34,29 @@ nav.scrolled {
     margin-right: 1rem; /* Space between logo and other navbar items */
 }
 .credit {
-    font-size: 1 rem;
+    font-size: 1rem; /* Adjusted font size */
     font-weight: 600;
-    margin-left: auto;
     color: white;
+    margin-right: 10px; /* Add space between the text and the button */
 }
 
 @media (max-width: 600px) { /* Adjust the breakpoint as needed */
     nav {
         padding: 0 50px; /* Reduce padding to avoid overflowing */
     }
+}
+
+.try-button {
+    background-color: transparent; /* Change background color if needed */
+    color: white; /* Change text color if needed */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Add padding for button appearance */
+    border: 1px solid white; /* Optional: Add border to make it look like a button */
+    border-radius: 4px; /* Optional: Rounded corners */
+    margin-left: 10px; /* Space between credit and button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.try-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Optional: Background on hover */
 }
