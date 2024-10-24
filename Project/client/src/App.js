@@ -3,6 +3,7 @@ import Navbar from "./Navbar.js"
 import LandingPageTop from './LandingPageTop.js'
 import Card from "./card.js"
 import data from "./data.js"
+import Chatbox from './Chatbox';
 
 function App() {
 
@@ -28,6 +29,10 @@ function App() {
           {cards}
         </div>
       </section>
+      <div className="chat-container">
+        <h2 className="chat-title">Ask me anything VCT related</h2>
+        <Chatbox />
+      </div>
 
 
 
