@@ -29,7 +29,7 @@ function App() {
           {cards}
         </div>
       </section>
-      <div className="chat-container">
+      <div className="chat-container" id="chat-section">
         <h2 className="chat-title">Ask me anything VCT related</h2>
         <Chatbox />
       </div>

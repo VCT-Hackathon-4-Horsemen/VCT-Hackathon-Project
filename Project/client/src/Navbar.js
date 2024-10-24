@@ -24,7 +24,7 @@ export default function Navbar() {
         <nav>
             <img src={logo} className="nav--logo" alt="valpal logo" />
             <h4 className="credit">Powered By: AWS Bedrock</h4>
-            <a href="#" className="try-button">
+            <a href="#chat-section" className="try-button">
                 Try Me
             </a>
 
