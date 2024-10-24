@@ -22,9 +22,6 @@ export default function Card(props) {
                 <span className="gray">({props.stats.reviewCount})</span>
             </div>
             <p className="card--title">{props.title}</p>
-            <p className="card--price">
-                <span className="bold">From ${props.price}</span> / person
-            </p>
         </div>
     )
 }
